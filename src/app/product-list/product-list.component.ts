@@ -11,7 +11,11 @@ export class ProductListComponent {
   products = [...products];
 
   share() {
-    window.alert('The product has been shared!');
+    window.open('https://t.me/share/url?url=https://kaspi.kz/shop/p/apple-iphone-13-128gb-midnight-chernyi-102298404/?c=750000000')
+  }
+
+  onNotify() {
+    window.alert('You will be notified when the product goes on sale');
   }
 }
 
