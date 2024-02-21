@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 import { products } from '../products';
 
@@ -12,6 +12,9 @@ export class ProductListComponent {
 
   share() {
     window.open('https://t.me/share/url?url=https://kaspi.kz/shop/p/apple-iphone-13-128gb-midnight-chernyi-102298404/?c=750000000')
+  }
+  shareProd(product: any) {
+    window.open("https://t.me/share/url?url=" + product.productLink)
   }
 
   onNotify() {

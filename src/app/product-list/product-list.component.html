@@ -8,11 +8,11 @@
       </h3>
       <!-- Image -->
         <p *ngIf="product.imageUrl; else noImage">
-            <img src="{{ product.imageUrl }}" width="100">
+            <img src="{{ product.imageUrl }}" height="150">
         </p>
         <ng-template #noImage>
             <p>
-                <img src="assets/images/placeholder.png" width="100">
+                <img src="assets/images/placeholder.png" hidth="150">
             </p>
         </ng-template>
         <!-- Rating -->
@@ -27,7 +27,7 @@
         <pre *ngIf = "product.description">
             {{ product.description }}
         </pre>
-      <button (click)="share()" class="button-2">
+      <button (click)="shareProd(product)" class="button-2">
         Share
       </button>
 

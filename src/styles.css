@@ -21,6 +21,9 @@ body {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 1px;
+  padding: 5px;
+  margin: 10px;
+  border-bottom: #450985 1px dotted;
 }
 
 router-outlet + *  {
